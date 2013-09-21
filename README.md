@@ -1,4 +1,4 @@
 KuttyBrowser
 ============
 
-Query Browser For Apache Hbase
+Query Browser For Apache Hbase.
