@@ -1,4 +1,5 @@
-KuttyBrowser
+HBrowser
 ============
 
-Query Browser For Apache Hbase.
+INteractive Query Browser For Apache Hbase.
+Web Based Hadoop Hbase browser.
