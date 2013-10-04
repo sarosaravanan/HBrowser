@@ -12,13 +12,13 @@ download  and install maven apache-maven-3.1.0-bin.tar.gz .
 
 Run 
 ============
-```$ git clone https://github.com/naviensubramani/HBrowser.git```
+>```$ git clone https://github.com/naviensubramani/HBrowser.git```
 
-```$ cd HBrowser```
+>```$ cd HBrowser```
 
-```$ mvn clean```
+>```$ mvn clean```
 
-```$ mvn compile exec:java -Dexec.mainClass=com.hlabs.hbrowse.App```
+>```$ mvn compile exec:java -Dexec.mainClass=com.hlabs.hbrowse.App```
 
 Browse
 ============
