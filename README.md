@@ -20,6 +20,6 @@ Run
 
 ```$ mvn compile exec:java -Dexec.mainClass=com.hlabs.hbrowse.App```
 
-Browser
+Browse
 ============
 ```$ http://localhost:8080```
