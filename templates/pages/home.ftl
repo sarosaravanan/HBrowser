@@ -176,9 +176,9 @@ function create_table(tname,cFamily)
         <div class="span2">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Contents</li>
-              <li><a href="#">Hive Browser <i class="icon-chevron-right"></i></a></li>
-              <li><a href="#">HDFS <i class="icon-chevron-right"></i></a></li>
+              <li class="nav-header">Tables</li>
+              <li><a href="#">Table 1 <i class="icon-chevron-right"></i></a></li>
+              <li><a href="#">Table 2<i class="icon-chevron-right"></i></a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -200,7 +200,7 @@ function create_table(tname,cFamily)
                   <div class="modal-body">
                   <div id="formdata">
                       <!--form action="/home" method="post"-->
-                      <textarea class="form-control" id="query" name="query" placeholder="Enter Hive Query" rows="3" style="width: 100%;" required></textarea>
+                      <textarea class="form-control" id="query" name="query" placeholder="Enter Hbase Query" rows="3" style="width: 100%;" required></textarea>
                       <div>
                       <button class="btn btn-primary" id="runquery" ><i class="icon-white icon-hand-right"></i> Run Query</button></div>
                       <!--/form-->
