@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.hlabs</groupId>
+    <artifactId>HBrowser</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>HBrowser</name>
+    <packaging>jar</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.6</java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<!--mainClass>com.hlabs.hbrowse.HBaseCRUD</mainClass -->
+							<mainClass>com.hlabs.hbrowse.App</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+          <groupId>spark</groupId>
+          <artifactId>spark</artifactId>
+          <version>0.9.9.4-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+          <groupId>org.freemarker</groupId>
+          <artifactId>freemarker</artifactId>
+          <!-- Latest 2.3.x (not 2.4.x), at least 2.3.19 -->
+          <version>2.3.19</version>
+        </dependency>
+        <dependency>
+	        <groupId>org.slf4j</groupId>
+	        <artifactId>slf4j-api</artifactId>
+	        <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+
+        <dependency>
+			<groupId>org.apache.hbase</groupId>
+			<artifactId>hbase</artifactId>
+			<version>0.94.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hbase</groupId>
+			<artifactId>hbase-client</artifactId>
+			<version>0.95.2-hadoop1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>
+    </dependencies>
+  <repositories>
+      <repository>
+        <id>Spark repository</id>
+        <url>http://www.sparkjava.com/nexus/content/repositories/spark/</url>
+      </repository>
+  </repositories>    
+</project>

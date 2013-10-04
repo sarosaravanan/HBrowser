@@ -10,6 +10,7 @@
 *.jar
 *.war
 *.ear
+*.xml~
 
 # Exclude Folder List #
 bit/
@@ -18,6 +19,7 @@ bit/
 .idea/
 bin/
 out/
+target/
 .gradletasknamecache
 
 # OS generated files #
